@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intro</title>
+  <link rel="stylesheet" href="artcss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="artjs.js"></script>
+  
+</head>
+<body onload="filterSelection('all')">
+  <div class="header">
+      <div class="header-right">
+        <a href="intro.html" >Home</a>
+        <a href="certi.html">Certificates</a>
+        <a href="edu.html">Education</a>
+        <a href="art.html"  class="active">Arts</a> <br>
+
+      </div>  
+    </div>
+
+    <h2>DRAWINGS</h2>
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('mandaladrawings')">Mandala</button>
+  <button class="btn" onclick="filterSelection('Smalldrawings')">Small Drawings</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column mandaladrawings">
+    <div class="content">
+          <img src="mandala1.jpg"  alt= "mandala" style="width:100%" onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column mandaladrawings">
+    <div class="content">
+      <img id="myImg" src="mandala2.jpg" alt="Lights" style="width:100%"  onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column mandaladrawings">
+    <div class="content">
+      <img src="mandala3.jpg" alt="Nature" style="width:100%" onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column mandaladrawings">
+      <div class="content">
+        <img src="mandala4.jpg" alt="Nature" style="width:100%" onclick="onClick(this)" class="modal-hover-opacity">
+
+      </div>
+    </div>
+  <div class="column mandaladrawings">
+        <div class="content">
+          <img src="mandala5.jpg" alt="Nature" style="width:100%" onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+    </div>
+
+
+  <div class="column Smalldrawings">
+    <div class="content">
+      <img src="sm1.jpg" alt="Car" style="width:100%" onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column Smalldrawings">
+    <div class="content">
+      <img src="sm2.jpg" alt="Car" style="width:100%" onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column Smalldrawings">
+    <div class="content">
+      <img src="sm3.jpg" alt="Car" style="width:100%"  onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column Smalldrawings">
+    <div class="content">
+      <img src="sm4.jpg" alt="Car" style="width:100%"  onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+  <div class="column Smalldrawings">
+    <div class="content">
+      <img src="sm5.jpg" alt="Car" style="width:100%"  onclick="onClick(this)" class="modal-hover-opacity">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <div class="modal-content">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+<footer class="foot">
+      <a href= "https://www.facebook.com/" class= "fa fa-facebook-square" aria-hidden = "true" ></a>
+          <a href= "https://twitter.com/y_sejal" class= "fa fa-twitter" aria-hidden = "true" ></a>
+          <a href= "https://www.instagram.com/" class= "fa fa-instagram" aria-hidden = "true" ></a>
+
+  </footer>
+  
+</body>
+</html>
